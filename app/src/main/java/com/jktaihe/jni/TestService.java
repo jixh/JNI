@@ -25,4 +25,10 @@ public class TestService extends Service {
         Log.d(TAG, "onStartCommand: ");
         return super.onStartCommand(intent, flags, startId);
     }
+
+    @Override
+    public void onCreate() {
+        super.onCreate();
+        Log.d(TAG, "onCreate: ");
+    }
 }
